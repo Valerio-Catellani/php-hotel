@@ -1,8 +1,8 @@
 <?php
-function generateGames($hotels)
+function generateGames($filteredHotels)
 {
     $fullTemplate = '';
-    foreach ($hotels as $hotel) {
+    foreach ($filteredHotels as $hotel) {
         $hasParking = $hotel['parking'] ? 'Yes' : 'No';
         $stars = getStars($hotel['vote']);
         $template = "
@@ -16,13 +16,22 @@ function generateGames($hotels)
         ";
         $fullTemplate .= $template;
     };
+    if (count($filteredHotels) === 0) {
+        $fullTemplate = '<tr>
+        <td class="text-center fst-italic ">Non ci sono Hotel disponibili. Effettua una nuova ricerca cambiando i parametri</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>';
+    }
     return $fullTemplate;
 };
 
 function getStars($value)
 {
     $fullTemplate = '';
-    for ($i = 0; $i <= 5; $i++) {
+    for ($i = 0; $i < 5; $i++) {
         if ($i < $value) {
             $fullTemplate .= '<i class="fa-solid fa-star text-warning"></i>';
         } else {
@@ -34,7 +43,7 @@ function getStars($value)
 
 ?>
 
-<table class="table table-striped table-hover table-dark border hype-shadow-white rounded-3">
+<table class="table table-striped table-hover table-dark border hype-shadow-white rounded">
     <thead>
         <tr>
             <th scope="col">Hotel Name</th>
@@ -45,6 +54,6 @@ function getStars($value)
         </tr>
     </thead>
     <tbody>
-        <?php echo generateGames($hotels) ?>
+        <?php echo generateGames($filteredHotels) ?>
     </tbody>
 </table>
