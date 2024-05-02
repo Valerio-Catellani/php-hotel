@@ -15,7 +15,7 @@
 <body class="bg-primary p-5 text-white">
     <header>
         <div class="container text-center">
-            <h1 class="hype-text-shadow hype-hover-size">
+            <h1 class="hype-text-shadow">
                 Hotel
             </h1>
         </div>
