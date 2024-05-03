@@ -25,9 +25,11 @@ $template = generateHotelTemplate($findedHotel);
 
 <body class="py-5 text-white">
     <?php include __DIR__ . "/../Views/body/header.php"; ?>
-    <main class="container d-flex align-items-center justify-content-center ">
+    <main class="container d-flex flex-column align-items-center justify-content-center ">
         <?php echo $template; ?>
-
+        <a href="../index.php" class="text-decoration-none">
+            <button href="index.php" class="btn btn-warning w-100 py-2 w-25 border border-black mt-3">Torna alla Home</button>
+        </a>
     </main>
 </body>
 

@@ -5,10 +5,11 @@ body {
    background-attachment: fixed;
    background-size: cover;
    margin-top: 100px;
+   font-family: "Oleo Script", system-ui;;
 }
 
 header {
-    height: 70px;
+    height: 90px;
     z-index:100 !important;
 }
 
@@ -40,12 +41,14 @@ header {
 .yellow-table-hover:hover {
     --bs-table-hover-bg: #eecb62 !important;
     --bs-table-hover-color: #000000 !important;
-    cursor: pointer;
 }
 
 .link-hotel {
     text-decoration: none;
-    color: inherit !important
+    color: inherit !important;
+    display: block;
+    cursor: pointer;
+    width: 100%;
 }
 
 
