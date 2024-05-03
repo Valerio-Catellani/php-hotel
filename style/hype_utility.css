@@ -33,3 +33,8 @@
 .hype-pointer {
     cursor: pointer;
 }
+
+.main-color {
+  background-color: #212222 !important;
+  color: rgb(243, 0, 0) !important;
+}

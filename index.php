@@ -22,8 +22,10 @@ include_once __DIR__ . "/Models/hotel.php";
     <title>Php Hotel: Home</title>
 </head>
 
-<body class=" p-5 text-white">
+<body class="p-5 mio-colore text-white">
+    <div id="mio-colore"> ciao</div>
     <?php include __DIR__ . "/Views/body/header.php"; ?>
+    <?php include __DIR__ . "/Views/body/search.php"; ?>
     <main class="container">
         <a href="access/logout.php">Slogga</a>
         <?php
