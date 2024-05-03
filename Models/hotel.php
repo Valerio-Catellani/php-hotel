@@ -15,7 +15,8 @@ $hotels = [
         'description' => 'Hotel Futuro Descrizione',
         'parking' => true,
         'vote' => 2,
-        'distance_to_center' => 2
+        'distance_to_center' => 2,
+        'img' => '../src/img/hotel/hotel2.jpg',
     ],
     [
         'id' => 3,
@@ -23,7 +24,8 @@ $hotels = [
         'description' => 'Hotel Rivamare Descrizione',
         'parking' => false,
         'vote' => 1,
-        'distance_to_center' => 1
+        'distance_to_center' => 1,
+        'img' => '../src/img/hotel/hotel3.jpg',
     ],
     [
         'id' => 4,
@@ -31,7 +33,8 @@ $hotels = [
         'description' => 'Hotel Bellavista Descrizione',
         'parking' => false,
         'vote' => 5,
-        'distance_to_center' => 5.5
+        'distance_to_center' => 5.5,
+        'img' => '../src/img/hotel/hotel4.jpg',
     ],
     [
         'id' => 5,
@@ -39,7 +42,8 @@ $hotels = [
         'description' => 'Hotel Milano Descrizione',
         'parking' => true,
         'vote' => 2,
-        'distance_to_center' => 50
+        'distance_to_center' => 50,
+        'img' => '../src/img/hotel/hotel5.jpg',
     ],
     [
         'id' => 6,
@@ -47,7 +51,8 @@ $hotels = [
         'description' => 'Hotel Splendido Descrizione',
         'parking' => true,
         'vote' => 4,
-        'distance_to_center' => 8.2
+        'distance_to_center' => 8.2,
+        'img' => '../src/img/hotel/hotel6.jpg',
     ],
     [
         'id' => 7,
@@ -55,7 +60,8 @@ $hotels = [
         'description' => 'Hotel Vista Mare Descrizione',
         'parking' => false,
         'vote' => 3,
-        'distance_to_center' => 3.7
+        'distance_to_center' => 3.7,
+        'img' => '../src/img/hotel/hotel7.jpg',
     ],
     [
         'id' => 8,
@@ -63,7 +69,8 @@ $hotels = [
         'description' => 'Hotel Panorama Descrizione',
         'parking' => false,
         'vote' => 5,
-        'distance_to_center' => 2.8
+        'distance_to_center' => 2.8,
+        'img' => '../src/img/hotel/hotel8.jpg',
     ],
     [
         'id' => 9,
@@ -71,7 +78,8 @@ $hotels = [
         'description' => 'Hotel Sole Descrizione',
         'parking' => false,
         'vote' => 4,
-        'distance_to_center' => 6.5
+        'distance_to_center' => 6.5,
+        'img' => '../src/img/hotel/hotel9.jpg',
     ],
     [
         'id' => 10,
@@ -79,7 +87,8 @@ $hotels = [
         'description' => 'Hotel Luna Descrizione',
         'parking' => true,
         'vote' => 3,
-        'distance_to_center' => 12.1
+        'distance_to_center' => 12.1,
+        'img' => '../src/img/hotel/hotel10.jpg',
     ],
     [
         'id' => 11,
@@ -87,7 +96,8 @@ $hotels = [
         'description' => 'Hotel Mare e Monti Descrizione',
         'parking' => true,
         'vote' => 4,
-        'distance_to_center' => 9.8
+        'distance_to_center' => 9.8,
+        'img' => '../src/img/hotel/hotel11.jpg',
     ],
     [
         'id' => 12,
@@ -95,7 +105,8 @@ $hotels = [
         'description' => 'Hotel Le Palme Descrizione',
         'parking' => true,
         'vote' => 4,
-        'distance_to_center' => 6.9
+        'distance_to_center' => 6.9,
+        'img' => '../src/img/hotel/hotel12.jpg',
     ],
     [
         'id' => 13,
@@ -103,7 +114,8 @@ $hotels = [
         'description' => 'Hotel La Pineta Descrizione',
         'parking' => false,
         'vote' => 2,
-        'distance_to_center' => 3.2
+        'distance_to_center' => 3.2,
+        'img' => '../src/img/hotel/hotel13.jpg',
     ],
     [
         'id' => 14,
@@ -111,7 +123,8 @@ $hotels = [
         'description' => 'Hotel I Tigli Descrizione',
         'parking' => false,
         'vote' => 5,
-        'distance_to_center' => 4.5
+        'distance_to_center' => 4.5,
+        'img' => '../src/img/hotel/hotel14.jpg',
     ],
     [
         'id' => 15,
@@ -119,7 +132,8 @@ $hotels = [
         'description' => 'Hotel Rosa Descrizione',
         'parking' => false,
         'vote' => 3,
-        'distance_to_center' => 7.7
+        'distance_to_center' => 7.7,
+        'img' => '../src/img/hotel/hotel15.jpg',
     ],
     [
         'id' => 16,
@@ -127,7 +141,8 @@ $hotels = [
         'description' => 'Hotel Mediterraneo Descrizione',
         'parking' => true,
         'vote' => 4,
-        'distance_to_center' => 11.3
+        'distance_to_center' => 11.3,
+        'img' => '../src/img/hotel/hotel16.jpg',
     ],
     [
         'id' => 17,
@@ -135,7 +150,8 @@ $hotels = [
         'description' => 'Hotel Gardenia Descrizione',
         'parking' => true,
         'vote' => 3,
-        'distance_to_center' => 4.8
+        'distance_to_center' => 4.8,
+        'img' => '../src/img/hotel/hotel17.jpg',
     ],
     [
         'id' => 18,
@@ -143,7 +159,8 @@ $hotels = [
         'description' => 'Hotel Stella Descrizione',
         'parking' => false,
         'vote' => 2,
-        'distance_to_center' => 8.9
+        'distance_to_center' => 8.9,
+        'img' => '../src/img/hotel/hotel18.jpg',
     ],
     [
         'id' => 19,
@@ -151,16 +168,18 @@ $hotels = [
         'description' => 'Hotel Lido Descrizione',
         'parking' => false,
         'vote' => 4,
-        'distance_to_center' => 3.6
+        'distance_to_center' => 3.6,
+        'img' => '../src/img/hotel/hotel19.jpg',
     ],
     [
         'id' => 20,
         'name' => 'Hotel Panettone',
-        'description' => 'Hotel Panettone Descrizione',
+        'description' => 'Hotel Panettone',
         'parking' => false,
         'vote' => 5,
-        'distance_to_center' => 6.2
-    ]
+        'distance_to_center' => 3.6,
+        'img' => '../src/img/hotel/hotel20.jpg',
+    ],
 ];
 
 
