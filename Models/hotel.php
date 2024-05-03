@@ -6,7 +6,8 @@ $hotels = [
         'description' => 'Hotel Belvedere Descrizione',
         'parking' => true,
         'vote' => 4,
-        'distance_to_center' => 10.4
+        'distance_to_center' => 10.4,
+        'img' => '../src/img/hotel/hotel1.jpg',
     ],
     [
         'id' => 2,
@@ -182,4 +183,13 @@ function getHotels($db)
         });
     };
     return $filteredHotels;
+}
+
+function getHotels_by_id($db)
+{
+    $findHotelbyId = array_filter($db, function ($element) {
+        return $element['id'] == $_GET['hotelId'];
+    });
+    $findedHotel = array_shift($findHotelbyId);
+    return $findedHotel;
 }

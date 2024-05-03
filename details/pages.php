@@ -6,6 +6,11 @@ if (!isset($_SESSION['userId'])) {
     die();
 }
 
+include_once __DIR__ . "/../Models/hotel.php";
+$findedHotel = getHotels_by_id($hotels);
+
+include __DIR__ . "/../Controllers/generateHotel.php";
+$template = generateHotelTemplate($findedHotel);
 ?>
 
 <!DOCTYPE html>
@@ -20,9 +25,9 @@ if (!isset($_SESSION['userId'])) {
 
 <body class="py-5 text-white">
     <?php include __DIR__ . "/../Views/body/header.php"; ?>
+    <main class="container d-flex align-items-center justify-content-center ">
+        <?php echo $template; ?>
 
-    <main class="container text-">
-        ciao
     </main>
 </body>
 
