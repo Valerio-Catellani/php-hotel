@@ -1,40 +1,32 @@
-<header>
-    <nav class="navbar border-body fixed-top" style="background-color: rgba(0, 0, 0, 0.5);">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+<header class="main-color fixed-top w-100 hype-shadow-white">
+    <div class="container h-100">
+        <nav class=" text-white h-100 d-flex align-items-center justify-content-between py-2">
+            <div class="img-container h-100">
+                <img class="img-fluid h-100" src="/php-hotel/src/img/Php-hotel-logo.png" alt="logo" width="100">
             </div>
-        </div>
-    </nav>
+            <div>
+                <h1 class="text-center hype-text-shadowdisplay-4 fw-bold h-100">
+                    Hotel PHP
+                </h1>
+            </div>
+            <div class="d-flex gap-3 align-items-center">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-user fs-3"></i>
+                    </div>
+                    <p class="mb-0"><?php echo $_SESSION['name'] ?? 'effettua il login' ?></p>
+
+                </div>
+                <?php
+                if (isset($_SESSION['userId'])) {
+                    echo '<div class="icon-container">
+                            <a href="/php-hotel/access/logout.php" class="text-white text-decoration-none yellow-hover">
+                                <i class="fa-solid fa-right-from-bracket fs-3"></i>
+                            </a>
+                        </div>';
+                }
+                ?>
+            </div>
+        </nav>
+    </div>
 </header>

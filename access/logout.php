@@ -20,9 +20,12 @@ if (isset($_SESSION['userId'])) {
 </head>
 
 <body class=" p-5 text-white">
-    <main class="container">
-        <div>addio <?php echo $name ?></div>
-    </main>
+    <?php include __DIR__ . "/../Views/body/header.php"; ?>
+    <div class="filter vw-100 vh-100">
+    </div>
+    <div class="container main-color-transparent d-flex justify-content-center align-items-center main-logout border rounded-4">
+        <h3>Arrivederci <?php echo $name ?></h3>
+    </div>
 </body>
 <script>
     setTimeout(() => {

@@ -1,8 +1,6 @@
 <div class="container">
-    <!-- <h1 class="text-center hype-text-shadow mb-5 display-4 fw-bold">
-            Hotel PHP
-        </h1> -->
-    <div class="p-5 bg-dark mb-5 rounded-4 border border-black hype-shadow-white">
+    <div class="px-5 py-4 main-color mb-5 rounded-4 border border-black hype-shadow-white">
+        <h2 class="mb-3">Trova il tuo Hotel</h2>
         <form action="index.php" method="GET" class="d-flex flex-column align-items-baseline gap-3">
             <select class="form-control me-2 w-25 hype-shadow-white hype-pointer" name="parking">
                 <option value="all" selected>Tutti gli Hotel</span></option>

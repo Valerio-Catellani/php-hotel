@@ -6,12 +6,26 @@ if (!isset($_SESSION['userId'])) {
     die();
 }
 
-include __DIR__ . "/Views/header.php"; //ci fornisce tutti i dati presenti e le variabili tra cui $filteredHotels che ci serve in table
-include __DIR__ . "/Models/hotel.php";
 ?>
-<main class="container">
 
-</main>
-<?php
-include __DIR__ . "/Views/footer.php"
-?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <?php include __DIR__ . "/../Views/head/head.php"; ?>
+    <link rel="stylesheet" href="../style/hype_utility.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <title>Php Hotel: NOME</title>
+</head>
+
+<body class="py-5 text-white">
+    <?php include __DIR__ . "/../Views/body/header.php"; ?>
+
+    <main class="container text-">
+        ciao
+    </main>
+</body>
+
+<?php include __DIR__ . "/../Views/body/footer.php" ?>
+
+</html>

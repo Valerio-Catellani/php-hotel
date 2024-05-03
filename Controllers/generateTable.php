@@ -7,13 +7,14 @@ function generateTemplateTable($filteredHotels)
         $hasParking = $hotel['parking'] ? 'Yes' : 'No';
         $stars = getStars($hotel['vote']);
         $template = "
-        <tr>
-        <td>{$hotel['name']}</td>
-        <td>{$hotel['description']}</td>
-        <td>$stars</td>
-        <td>$hasParking</td>
-        <td>{$hotel['distance_to_center']} km</td>
-        </tr>
+        <tr class='yellow-table-hover'>
+        <td><a href='./details/pages.php?id={$hotel['id']}' class='link-hotel'>{$hotel['name']}</a></td>
+        <td><a href='./details/pages.php?id={$hotel['id']}' class='link-hotel'>{$hotel['description']}</a></td>
+        <td><a href='./details/pages.php?id={$hotel['id']}' class='link-hotel'>$stars</a></td>
+        <td><a href='./details/pages.php?id={$hotel['id']}' class='link-hotel'>$hasParking</a></td>
+        <td><a href='./details/pages.php?id={$hotel['id']}' class='link-hotel'>{$hotel['distance_to_center']} km</a></td>
+      </tr>
+
         ";
         $fullTemplate .= $template;
     };
