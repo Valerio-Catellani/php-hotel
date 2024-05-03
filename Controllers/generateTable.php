@@ -1,5 +1,6 @@
 <?php
-function generateGames($filteredHotels)
+
+function generateTemplateTable($filteredHotels)
 {
     $fullTemplate = '';
     foreach ($filteredHotels as $hotel) {
@@ -40,20 +41,3 @@ function getStars($value)
     }
     return $fullTemplate;
 }
-
-?>
-
-<table class="table table-striped table-hover table-dark border hype-shadow-white rounded">
-    <thead>
-        <tr>
-            <th scope="col">Hotel Name</th>
-            <th scope="col">Description</th>
-            <th scope="col">Vote</th>
-            <th scope="col">Parking</th>
-            <th scope="col">Distance to Center</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php echo generateGames($filteredHotels) ?>
-    </tbody>
-</table>
