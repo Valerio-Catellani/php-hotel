@@ -14,12 +14,12 @@ function generateHotelTemplate($hotel)
         <h6>Distanza dal centro: $hotel[distance_to_center] km</h6>
         <h6> $hasParking </h6>
     </div>
-    <div class='w-75 my-3 rounded-circle overflow-hidden hype-shadow-white'>
-        <img class='img-fluid' src='$hotel[img]' alt='hotel image'>
+    <div class='hotel-presentation-container w-75 my-3 rounded-circle overflow-hidden hype-shadow-white'>
+        <img class='hotel-presentation' src='$hotel[img]' alt='hotel image'>
     </div>
-    <h5>$hotel[description]</h5>
-    <p class='hotel-description'>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores similique asperiores cumque, nihil labore debitis tempora tempore! Facilis dolore, iusto non ex obcaecati repellendus veritatis sunt quaerat doloribus praesentium, suscipit et magni quasi! Deleniti numquam, illo aliquam quae aspernatur amet velit quas. Quos officia officiis, autem temporibus sapiente dolore ad quaerat et, incidunt aut optio praesentium. Incidunt voluptatibus sit nesciunt vero similique mollitia ipsum, facere assumenda aliquam a sed placeat deserunt labore. Consequuntur tempore quidem incidunt rem ullam id provident hic velit, placeat, minus quisquam autem nulla enim ut vitae vel exercitationem. Quaerat, vel quidem magni delectus laudantium ducimus quibusdam!
+    <h4 class='mt-3'>$hotel[description]</h4>
+    <p class='hotel-description fs-5'>
+            $hotel[desc]
     </p>
 </div>
     ";

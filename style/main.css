@@ -81,9 +81,32 @@ header {
     width: 400px;
     height: 200px;
 }
+
+
 /*pages*/
 
 .hotel-description {
     max-height: 200px;
     overflow-y: auto;
+}
+
+.hotel-presentation-container {
+    aspect-ratio: 1/1;
+}
+
+.hotel-presentation {
+    position: relative;
+    left: 0;
+    top: -50%;
+    animation: scrolling 15s linear infinite; 
+}
+
+@keyframes scrolling {
+    0% {
+        left:0;
+    } 50% {
+        left:-50%;
+    } 100% {
+        left: 0;
+    }
 }

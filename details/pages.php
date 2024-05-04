@@ -20,6 +20,7 @@ $template = generateHotelTemplate($findedHotel);
     <?php include __DIR__ . "/../Views/head/head.php"; ?>
     <link rel="stylesheet" href="../style/hype_utility.css">
     <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/media_query.css">
     <title>Php Hotel: <?php echo $findedHotel['name'] ?></title>
 </head>
 
