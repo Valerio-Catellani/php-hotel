@@ -5,5 +5,22 @@
     .hotel-presentation {
         top: -50%;
         width: 200%;
-    }; 
+    }
+
+    #search .search-right,
+    #search .search-left {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    #search .search-right .img-container,
+    #search .search-left .img-container{
+        margin: 0 auto;
+    }
+
+    #search .search-left {
+        margin-bottom: 60px;
+
+    }
+
 }

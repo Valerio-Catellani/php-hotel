@@ -7,8 +7,8 @@ function generateTemplateTable($filteredHotels)
         $hasParking = $hotel['parking'] ? 'Yes' : 'No';
         $stars = getStars($hotel['vote']);
         $template = "
-        <tr class='yellow-table-hover'>
-        <td><a href='./details/pages.php?hotelId={$hotel['id']}' class='link-hotel'>{$hotel['name']}</a></td>
+        <tr class='yellow-table-hover test'>
+        <td ><a href='./details/pages.php?hotelId={$hotel['id']}' class='link-hotel'>{$hotel['name']}</a></td>
         <td><a href='./details/pages.php?hotelId={$hotel['id']}' class='link-hotel'>{$hotel['description']}</a></td>
         <td><a href='./details/pages.php?hotelId={$hotel['id']}' class='link-hotel'>$stars</a></td>
         <td><a href='./details/pages.php?hotelId={$hotel['id']}' class='link-hotel'>$hasParking</a></td>

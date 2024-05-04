@@ -21,6 +21,7 @@ $template = generateHotelTemplate($findedHotel);
     <link rel="stylesheet" href="../style/hype_utility.css">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../style/media_query.css">
+    <link rel="stylesheet" href="../style/animation.css">
     <title>Php Hotel: <?php echo $findedHotel['name'] ?></title>
 </head>
 
