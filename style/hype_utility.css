@@ -38,3 +38,7 @@
   background-color: #212222 !important;
   color: rgb(243, 0, 0) !important;
 }
+
+.hype-vw-100{
+    width: 100vw;
+}

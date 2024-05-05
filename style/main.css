@@ -83,7 +83,7 @@ header {
 }
 
 
-/*pages*/
+/****pages******/
 
 .hotel-description {
     max-height: 200px;
@@ -101,7 +101,25 @@ header {
     animation: scrolling 15s linear infinite; 
 }
 
-/*search*/
+/* comments */
+
+
+#active-comment {
+    transform: translateX(-100vw);
+}
+
+.active-comment-slide-in {
+    transform: translateX(0) !important;
+    transition: transform 0.5s ease-out;
+}
+
+.active-comment-slide-out {
+    transform: translateX(+100vw) !important;
+    transition: transform 0.5s ease-out;
+
+}
+
+/****search*****/
 
 #search .img-container {
     /*border: #86b7fe 3px solid;*/
@@ -115,18 +133,18 @@ top:-50%;
 }
 
 #search .rotate-negative {
-    animation: negative-rotation 1s ease-out forwards;
+    animation: negative-rotation 0.5s ease-out forwards;
 }
 
 #search .rotate-positive {
     position: absolute;
     top: 0;
     left: 25%;
-    animation: positive-rotation 1s ease-out forwards;
+    animation: positive-rotation 0.5s ease-out forwards;
 }
 
 #search h2 {
-    animation: title-shift 0.5s ease-out forwards;
+    animation: title-shift 1s ease-out forwards;
 }
 
 #search form {
@@ -137,11 +155,14 @@ top:-50%;
 
 tbody tr:nth-child(odd) {
     animation: table-enter-right 0.5s ease-out forwards;
-    /* Proprietà CSS per i <tr> dispari */
 }
 
-/* Seleziona solo i <tr> pari */
+
 tbody tr:nth-child(even) {
     animation: table-enter-left 0.5s ease-out forwards;
-    /* Proprietà CSS per i <tr> pari */
 }
+
+.active-comment-slider {
+    animation: table-enter-right 0.5s ease-out forwards;
+}
+
